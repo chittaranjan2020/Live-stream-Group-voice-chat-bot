@@ -1,0 +1,15 @@
+---
+application:
+  name: "live-stream-group-voice-chat-bot"
+  project: "live voice chat bot"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "cluster0"
+  version: "3.6"
+routers:
+- name: "main-live-stream-group-voice-chat-bot"
+  routes:
+  - application_name: "live-stream-group-voice-chat-bot"
+    paths:
+    - "/*"
